@@ -7,12 +7,12 @@ import { ClockIcon, TimerIcon, AlarmClockIcon, SettingsIcon } from "lucide-react
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 md:p-8 bg-background">
-      <header className="my-8 md:my-12 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold text-primary-foreground tracking-tight">
+    <div className="flex flex-col items-center min-h-screen p-4 sm:p-6 md:p-8 bg-background">
+      <header className="my-6 md:my-10 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground tracking-tight">
           ChronoMaster
         </h1>
-        <p className="text-lg text-muted-foreground mt-2">
+        <p className="text-md text-muted-foreground mt-2">
           Your ultimate timekeeping companion
         </p>
       </header>
@@ -39,34 +39,34 @@ export default function HomePage() {
 
         <TabsContent
           value="clock"
-          className="mt-6 p-6 md:p-8 rounded-xl shadow-xl bg-card min-h-[400px] flex items-center justify-center"
+          className="mt-6 p-6 md:p-8 rounded-xl shadow-lg bg-card min-h-[400px] flex items-center justify-center"
           aria-labelledby="Clock tab"
         >
           <ClockComponent />
         </TabsContent>
         <TabsContent
           value="stopwatch"
-          className="mt-6 p-6 md:p-8 rounded-xl shadow-xl bg-card min-h-[400px] flex items-center justify-center"
+          className="mt-6 p-6 md:p-8 rounded-xl shadow-lg bg-card min-h-[400px] flex items-center justify-center"
           aria-labelledby="Stopwatch tab"
         >
           <StopwatchComponent />
         </TabsContent>
         <TabsContent
           value="alarms"
-          className="mt-6 p-6 md:p-8 rounded-xl shadow-xl bg-card min-h-[400px]"
+          className="mt-6 p-6 md:p-8 rounded-xl shadow-lg bg-card min-h-[400px]"
           aria-labelledby="Alarms tab"
         >
           <AlarmsComponent />
         </TabsContent>
         <TabsContent
           value="settings"
-          className="mt-6 p-6 md:p-8 rounded-xl shadow-xl bg-card min-h-[400px]"
+          className="mt-6 p-6 md:p-8 rounded-xl shadow-lg bg-card min-h-[400px]"
           aria-labelledby="Settings tab"
         >
           <SettingsComponent />
         </TabsContent>
       </Tabs>
-      <footer className="mt-12 text-center text-sm text-muted-foreground">
+      <footer className="mt-10 text-center text-sm text-muted-foreground">
         <p>&copy; {new Date().getFullYear()} ChronoMaster. All rights reserved.</p>
       </footer>
     </div>

@@ -66,7 +66,7 @@ const AlarmForm: React.FC<AlarmFormProps> = ({ isOpen, onOpenChange, onSubmit, d
                 <FormItem>
                   <FormLabel>Time</FormLabel>
                   <FormControl>
-                    <Input type="time" {...field} className="text-lg" />
+                    <Input type="time" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
